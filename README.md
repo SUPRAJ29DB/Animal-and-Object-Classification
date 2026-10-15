@@ -142,13 +142,13 @@ Use a TensorFlow version compatible with the version used to save the model. Exa
 
 ### 4. Load the trained model
 
-Ensure `cifar10_resnet_91.keras` is present in the repository directory.
+Ensure `cifar10_resnet_91 (1).keras ` is present in the repository directory.
 
 ```python
 import tensorflow as tf
 
 model = tf.keras.models.load_model(
-    "cifar10_resnet_91.keras",
+    "cifar10_resnet_91 (1).keras",
     compile=False
 )
 
@@ -199,7 +199,13 @@ plt.title(f"Predicted: {class_names[predicted_index]}")
 plt.axis("off")
 plt.show()
 ```
-
+```text
+assets/
+├── sample-prediction.png
+├── accuracy-curve.png
+├── loss-curve.png
+└── confusion-matrix.png
+```
 The model includes a rescaling layer, so input images should retain pixel values in the 0–255 range.
 
 ## Repository Structure
